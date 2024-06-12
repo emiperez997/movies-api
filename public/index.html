@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie API</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-extended blue darken-3">
+        <div class="nav-wrapper container">
+          <a href="/" class="brand-logo concert-one"> Movies API </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#usage">Uso</a></li>
+            <li><a href="#register">Registro</a></li>
+            <li><a href="#about">Sobre nosotros</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#usage">Uso</a></li>
+        <li><a href="#register">Registro</a></li>
+        <li><a href="#about">Sobre nosotros</a></li>
+      </ul>
+    </header>
+
+    <main class="container center montserrat-regular">
+      <section class="p-5">
+        <h1 class="concert-one">La mejor API de Películas</h1>
+
+        <h5 class="montserrat-light">
+          Si necesitas una API de películas para practicar Frontend, estas en el
+          lugar correcto.
+        </h5>
+      </section>
+
+      <section id="usage">
+        <div class="title">
+          <h4>Uso</h4>
+        </div>
+
+        <ul class="w-full text-left">
+          <li>
+            <p class="text-center">
+              En cada petición es necesario utilizar la API key que recibes al
+              momento de registrar tu mail.
+              <br />
+              Se utilizaría de esta forma:
+            </p>
+            <div class="http">/api/movies?apikey=<i>YOUR_API_KEY</i></div>
+          </li>
+          <li>
+            <p>Obtener una película por id:</p>
+            <div class="http">/api/movies/:id</div>
+          </li>
+          <li>
+            <p>Buscar películas por titulo:</p>
+            <div class="http">/api/movies/search?title=<i>TITLE</i></div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="register">
+        <div class="title">
+          <h4>Registro</h4>
+        </div>
+
+        <p>
+          Para poder utilizar nuestra API es necesario registrarte con tu mail.
+          Una vez enviado, te llegara la API key para usarla.
+        </p>
+
+        <div class="info"></div>
+
+        <form>
+          <!-- Solo un input con el email y un botón de envío -->
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                name="email"
+                id="email"
+                type="email"
+                class="validate"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <button
+                class="waves-effect waves-light btn blue darken-3 left"
+                id="btn-submit"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section id="about">
+        <div class="title">
+          <h4>Sobre nosotros</h4>
+        </div>
+
+        <p>
+          Creado por:
+          <a
+            href="https://github.com/emiperez997"
+            target="_blank"
+            class="blue-text text-darken-3"
+          >
+            Emiliano Perez
+          </a>
+        </p>
+
+        <p>
+          Creado con:
+          <!-- Nestjs -->
+          <a
+            href="https://nestjs.com/"
+            target="_blank"
+            class="blue-text text-darken-3"
+          >
+            NestJS
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/send.js"></script>
+  </body>
+</html>

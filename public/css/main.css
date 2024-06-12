@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --gray: #bbbbbb;
+}
+
+.concert-one {
+  font-family: "Concert One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.title {
+  text-align: left;
+  margin: 30px 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.http {
+  width: 100%;
+  text-align: left;
+  background-color: var(--gray);
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: monospace;
+}
+/* Generic class */
+
+.w-full {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-5 {
+  padding: 30px;
+}
